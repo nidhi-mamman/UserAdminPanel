@@ -14,7 +14,7 @@ server.use(bodyParser.json()); // For parsing application/json
 server.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: "", // Your Netlify app URL
+  origin: "https://user-sphere.netlify.app/", // Your Netlify app URL
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };

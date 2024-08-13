@@ -10,7 +10,7 @@ export const AuthProvider = (props) => {
   const [user, setUser] = useState("");
   const[isLoading,setisLoading]=useState(true)
   const authorizationToken=`Bearer ${token}`
-  const BASE_URL=''
+  const BASE_URL='https://useradminpanel.onrender.com'
 
   let isLoggedin = !!token;
 
