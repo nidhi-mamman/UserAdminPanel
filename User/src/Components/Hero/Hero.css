@@ -1,0 +1,23 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.hero-content {
+  width: 50%;
+  text-align: justify;
+}
+
+.know {
+  width: 9.5rem;
+  height: 3rem;
+  color: white !important;
+  border-radius: 20px;
+  margin: 20px;
+  text-align: center;
+}

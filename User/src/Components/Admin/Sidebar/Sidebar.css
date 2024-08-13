@@ -1,0 +1,50 @@
+.header.close{
+  width:5rem;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.header {
+  width: 15rem;
+  height: 100vh;
+  box-shadow: 2px 2px 2px grey;
+} 
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.arrow{
+  height:1.5rem;
+  width: 1.5rem;
+  display: flex;
+  left:14.2rem; 
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: #000;
+  color: white;
+}
+
+.arrow.close{
+  left:4.3rem; 
+}
+
+.menu-items ul li {
+  height: 5rem;
+  width: 13rem;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  border-bottom: 1px solid grey;
+}
+
+.menu-items ul li:hover {
+  box-shadow: 10px 10px 10px grey;
+}

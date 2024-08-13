@@ -1,0 +1,22 @@
+.nav-bar ul li button.login {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10%;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.nav-bar ul li button.login:hover{
+    background-color: white;
+}
+
+.nav-bar ul li:hover{
+   color: blueviolet;
+   cursor: pointer;
+}
+
+.top-nav{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
