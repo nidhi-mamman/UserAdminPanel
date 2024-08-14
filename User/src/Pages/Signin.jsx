@@ -10,7 +10,7 @@ const Signin = () => {
 
   const [isVisible, setisVisible] = useState(false);
   const navigate = useNavigate();
-  const { storeTokenInLS,BASE_URL } = useAuth()
+  const { storeTokenInLS} = useAuth()
   const formRef = useRef(null);
 
 
@@ -27,7 +27,7 @@ const Signin = () => {
     console.log(formData)
     
     try {
-      const response = await axios.post(`${BASE_URL}/api/signin`, formData);
+      const response = await axios.post('https://useradminpanel.onrender.com/api/signin', formData);
       const res_data = response.data;
 
       storeTokenInLS(res_data.token);
