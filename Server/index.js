@@ -14,7 +14,7 @@ server.use(bodyParser.json()); // For parsing application/json
 server.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: "*", 
+  origin: "https://useradminpanel-frontend.onrender.com", 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
