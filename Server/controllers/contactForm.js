@@ -5,6 +5,8 @@ const contactResponse=async(req,res)=>{
     try {
         const {firstName,email,message}=req.body;
 
+        if(firstName,email,message)
+
         await Contact.create({firstName,email,message})
 
         return res.status(200).json("Response sent successfully")

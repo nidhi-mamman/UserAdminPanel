@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import { useState, useEffect } from "react";
 
 const Contact = () => {
-  const { user,BASE_URL } = useAuth();
+  const { user, BASE_URL } = useAuth();
   const [formData, setFormData] = useState({
     firstName: user ? user.firstName : "",
     email: user ? user.email : "",
@@ -32,6 +32,12 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!user) {
+      toast.error("You must be logged in to send a message");
+      return;
+    }
+
     try {
       const response = await axios.post(
         `${BASE_URL}/form/contact`,
