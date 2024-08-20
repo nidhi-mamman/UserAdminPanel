@@ -85,7 +85,7 @@ const Signup = () => {
       storeTokenInLS(res_data.token)
       if (response.status === 201) {
         toast("Signed up successfully");
-        navigate("/signin");
+        navigate("/");
       }
     } catch (error) {
       console.log(error)
