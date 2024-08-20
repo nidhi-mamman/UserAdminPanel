@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="hero-content text-left m-6">
           <h1 className="font-bold text-4xl mb-5 text-purple-700">
-            Hi,<span className="text-5xl text-white">{user.firstName}</span> to User management System
+            Hi,<span className="text-4xl text-white">{user.firstName}</span> to User management System
           </h1>
           <p className="text-white">
             User Management System includes a admin and user,the admin is able
