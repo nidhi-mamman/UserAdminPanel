@@ -27,7 +27,7 @@ const Signin = () => {
     console.log(formData)
     
     try {
-      const response = await axios.post(`${BASE_URL}`, formData);
+      const response = await axios.post(`${BASE_URL}/api/signin`, formData);
       const res_data = response.data;
 
       storeTokenInLS(res_data.token);
