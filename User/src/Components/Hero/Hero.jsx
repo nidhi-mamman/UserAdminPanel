@@ -3,7 +3,11 @@ import "./Hero.css";
 import hero from "../../assets/webdev.png";
 import { Link } from "react-router-dom";
 import { HiLightBulb } from "react-icons/hi";
+import { useAuth } from "../../Context/AuthContext";
 const Hero = () => {
+
+  const {user}=useAuth()
+
   return (
     <>
       <div className="hero-section">
@@ -12,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="hero-content text-left m-6">
           <h1 className="font-bold text-5xl mb-5 text-purple-700">
-            Welcome To User management System
+            Welcome {user.firstName} To User management System
           </h1>
           <p className="text-white">
             User Management System includes a admin and user,the admin is able
