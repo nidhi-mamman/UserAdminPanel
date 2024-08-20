@@ -47,7 +47,6 @@ export const AuthProvider = (props) => {
   };
 
   useEffect(() => {
-    console.log(`${BASE_URL}`)
     userAuthentication();
   }, [token]);
 
