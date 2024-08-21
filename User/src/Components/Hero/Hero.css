@@ -11,7 +11,7 @@
 
 .hero-content {
   width: 50%;
-  text-align: justify!important;
+  text-align: justify !important;
 }
 
 .know {
@@ -23,7 +23,12 @@
   text-align: center;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .hero-img {
     width: 50%;
     margin-top: 20px;
@@ -31,6 +36,6 @@
   .hero-content {
     width: 50%;
     font-size: 15px;
-    text-align: justify!important;
+    text-align: justify !important;
   }
 }
