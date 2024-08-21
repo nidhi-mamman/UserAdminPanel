@@ -15,8 +15,8 @@ const Hero = () => {
         <div className="hero-img">
           <img src={hero} alt="" />
         </div>
-        <div className="hero-content text-left m-6">
-          <h1 className="font-bold text-4xl mb-5 text-purple-700">
+        <div className="hero-content">
+          <h1 className="font-bold text-4xl  text-purple-700">
             Hi,<span className="text-4xl text-white">{user.firstName}</span> to User management System
           </h1>
           <p className="text-white">

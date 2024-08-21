@@ -6,11 +6,11 @@
 
 .hero-img {
   width: 50%;
-  margin-top: 20px;
 }
 
 .hero-content {
   width: 50%;
+  margin: 5rem!important;
   text-align: justify !important;
 }
 
@@ -31,10 +31,10 @@
     align-items: center;
   }
   .hero-img {
-    width: 40%;
+    width: 30%;
   }
   .hero-content {
-    width: 60%;
+    width: 70%;
     font-size: 15px;
     text-align: justify !important;
   }
