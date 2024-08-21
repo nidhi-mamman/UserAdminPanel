@@ -8,7 +8,7 @@ import '../Components/CSS/Style.css';
 const Services = () => {
   return (
     <>
-      <h1 className='text-6xl text-purple-700 font-bold hover:text-white'>Services</h1>
+      <h1 className='text-6xl mt-10 text-purple-700 font-bold hover:text-white'>Services</h1>
       <div className='services'>
         <div className="card bg-black" >
           <img src={webdev} className="card-img-top" alt="..." />

@@ -54,7 +54,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className="text-5xl font-bold text-purple-700 hover:text-white">
+      <h1 className="text-5xl mt-10 font-bold text-purple-700 hover:text-white">
         Contact Us
       </h1>
       <div className="form-section bg-black">

@@ -1,24 +1,22 @@
 import user from "../../assets/User-removebg-preview.jpg";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../Context/AuthContext";
+import { IoMdMenu } from "react-icons/io";
+import { RxCross1 } from "react-icons/rx";
 import "./Navbar.css";
+import { useState } from "react";
 
 const Navbar = () => {
   const { isLoggedin } = useAuth();
+   const[sidebarIsOpen,setSidebarIsOpen]=useState(false)
 
   return (
     <>
-      <div className="top-nav bg-black m-4 shadow-md shadow-white">
+      <div className="top-nav bg-black shadow-md shadow-white">
         <div className="nav-bar p-2 ">
-          <ul className="flex justify-around items-center text-white font-bold">
-            <Link to="/">
-              <li>
-                <img
-                  src={user}
-                  alt=""
-                  style={{ width: "5rem", height: "5rem" }}
-                />
-              </li>
+          <ul className={`${sidebarIsOpen?"sidebar":"hide-sidebar"}`}>
+            <Link>
+              <li><RxCross1 color="white" onClick={()=>{setSidebarIsOpen(!sidebarIsOpen)}}/></li>
             </Link>
             <Link to="/">
               <li>Home</li>
@@ -45,6 +43,38 @@ const Navbar = () => {
                 </li>
               </Link>
             )}
+          </ul>
+          <ul>
+            <li><Link to="/">
+              <img src={user} alt="" style={{ width: "5rem", height: "5rem" }} />
+            </Link>
+            </li>
+            <Link to="/">
+              <li className="hideOnMobile">Home</li>
+            </Link>
+            <Link to="/about">
+              <li className="hideOnMobile">About</li>
+            </Link>
+            <Link to="/services">
+              <li className="hideOnMobile">Services</li>
+            </Link>
+            <Link to="/contact">
+              <li className="hideOnMobile">Contact</li>
+            </Link>
+            {isLoggedin ? (
+              <Link to="/logout">
+                <li className="hideOnMobile">
+                  <button className="login">Logout</button>
+                </li>
+              </Link>
+            ) : (
+              <Link to="/signin">
+                <li className="hideOnMobile">
+                  <button className="login">Login/Signup</button>
+                </li>
+              </Link>
+            )}
+            <IoMdMenu color="white" size={30} onClick={()=>{setSidebarIsOpen(!sidebarIsOpen)}} />
           </ul>
         </div>
       </div>

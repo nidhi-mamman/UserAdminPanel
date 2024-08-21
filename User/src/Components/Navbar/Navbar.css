@@ -1,22 +1,69 @@
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.nav-bar ul li {
+  padding:20px;
+}
+
+.nav-bar ul li:first-child {
+  margin-right: auto;
+}
+
 .nav-bar ul li button.login {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 10%;
-    font-weight: bold;
-    background-color: blueviolet;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10%;
+  font-weight: bold;
+  background-color: blueviolet;
 }
 
-.nav-bar ul li button.login:hover{
-    background-color: white;
+.nav-bar ul li button.login:hover {
+  background-color: white;
 }
 
-.nav-bar ul li:hover{
-   color: blueviolet;
-   cursor: pointer;
+.nav-bar ul li:hover {
+  color: blueviolet;
+  cursor: pointer;
 }
 
-.top-nav{
-    position: sticky;
-    z-index: 1000;
-    top: 0;
+.top-nav {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: white;
+  width: 250px;
+  display:flex!important;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+.sidebar li {
+    width: 100%;
+    list-style: none;
+    margin:28px 2px 2px 2px;
+}
+
+.hide-sidebar{
+    display: none!important;
+}
+
+@media screen and (max-width:800px) {
+    .hideOnMobile{
+        display: none;
+    }
 }
