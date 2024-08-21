@@ -30,8 +30,7 @@
     align-items: center;
   }
   .hero-img {
-    width: 50%;
-    margin-top: 20px;
+    display: none;
   }
   .hero-content {
     width: 50%;
