@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 
 .hero-img {
   width: 50%;
+  margin-top: 20px;
 }
 
 .hero-content {
