@@ -26,14 +26,16 @@
 @media screen and (max-width: 800px) {
   .hero-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   .hero-img {
-    display: none;
+    width: 40%;
+    margin-top: 20px;
   }
   .hero-content {
-    width: 50%;
+    width: 60%;
     font-size: 15px;
     text-align: justify !important;
   }
