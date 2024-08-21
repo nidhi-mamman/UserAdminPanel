@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div className="top-nav bg-black shadow-md shadow-white">
-        <div className="nav-bar p-2 ">
+        <div className="nav-bar ">
           <ul className={`${sidebarIsOpen?"sidebar":"hide-sidebar"}`}>
             <Link>
               <li><RxCross1 color="white" onClick={()=>{setSidebarIsOpen(!sidebarIsOpen)}}/></li>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 </li>
               </Link>
             )}
-            <IoMdMenu color="white" size={30} onClick={()=>{setSidebarIsOpen(!sidebarIsOpen)}} />
+            <IoMdMenu color="white" size={30} className='hideOnBigScreens' onClick={()=>{setSidebarIsOpen(!sidebarIsOpen)}} />
           </ul>
         </div>
       </div>
