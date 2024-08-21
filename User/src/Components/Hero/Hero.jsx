@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <div className="hero-section">
         <div className="hero-img">
-          <img src={hero} alt="" />
+          <img src={hero} alt=""  height={100} width={100}/>
         </div>
         <div className="hero-content">
           <h1 className="font-bold text-4xl  text-purple-700">
