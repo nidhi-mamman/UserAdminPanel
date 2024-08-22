@@ -57,7 +57,7 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <div style={{ float:"left"}}>
+      <div className="flex gap-10 flex-1">
         <div className="sidebar">
           <Sidebar />
         </div>

@@ -342,6 +342,14 @@ tbody {
   flex-direction: column;
 }
 
+.sidebar {
+  position: relative;
+  left: 0;
+  width: 250px; /* Adjust width as needed */
+  height: 100vh; /* Full height of the viewport */
+}
+
+
 .admin-cards {
   color: white;
   display: flex;
