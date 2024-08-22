@@ -1,63 +1,63 @@
-// import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Sidebar from "../Components/Admin/Sidebar/Sidebar";
-// import { useAuth } from "../Context/AuthContext";
-// import { MdContacts } from "react-icons/md";
-// import { FaUserCircle } from "react-icons/fa";
-// import { useState, useEffect } from "react";
+import { useAuth } from "../Context/AuthContext";
+import { MdContacts } from "react-icons/md";
+import { FaUserCircle } from "react-icons/fa";
+import { useState, useEffect } from "react";
 import '../Components/CSS/Style.css'
-// import axios from 'axios'
+import axios from 'axios'
 
 const AdminDashboard = () => {
 
-  // const [userCount, setUserCount] = useState(0);
-  // const [contactCount, setContactCount] = useState(0);
-  // const { user, isLoading, authorizationToken, BASE_URL } = useAuth();
+  const [userCount, setUserCount] = useState(0);
+  const [contactCount, setContactCount] = useState(0);
+  const { user, isLoading, authorizationToken, BASE_URL } = useAuth();
 
   //TO GET USER COUNT
-  // const fetchUserCount = async () => {
-  //   try {
-  //     const response = await axios.get(`${BASE_URL}/admin/user-count`, {
-  //       headers: {
-  //         Authorization: authorizationToken
-  //       }
-  //     });
-  //     console.log("count", response.data.count)
-  //     setUserCount(response.data.count);
-  //   } catch (error) {
-  //     console.error('Error fetching user count:', error);
-  //   }
-  // };
+  const fetchUserCount = async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}/admin/user-count`, {
+        headers: {
+          Authorization: authorizationToken
+        }
+      });
+      console.log("count", response.data.count)
+      setUserCount(response.data.count);
+    } catch (error) {
+      console.error('Error fetching user count:', error);
+    }
+  };
 
-  // //TO GET CONTACT COUNT
-  // const fetchContactCount = async () => {
-  //   try {
-  //     const response = await axios.get(`${BASE_URL}/admin/contact-count`, {
-  //       headers: {
-  //         Authorization: authorizationToken
-  //       }
-  //     });
-  //     console.log("count", response.data.count)
-  //     setContactCount(response.data.count);
-  //   } catch (error) {
-  //     console.error('Error fetching contact count:', error);
-  //   }
-  // };
-  // useEffect(() => {
-  //   fetchUserCount();
-  //   fetchContactCount()
-  // }, []);
+  //TO GET CONTACT COUNT
+  const fetchContactCount = async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}/admin/contact-count`, {
+        headers: {
+          Authorization: authorizationToken
+        }
+      });
+      console.log("count", response.data.count)
+      setContactCount(response.data.count);
+    } catch (error) {
+      console.error('Error fetching contact count:', error);
+    }
+  };
+  useEffect(() => {
+    fetchUserCount();
+    fetchContactCount()
+  }, []);
 
-  // if (isLoading) {
-  //   return <h1 className="text-white">Loading......</h1>;
-  // }
+  if (isLoading) {
+    return <h1 className="text-white">Loading......</h1>;
+  }
 
-  // if (!user.isAdmin) {
-  //   return <Navigate to="/" />;
-  // }
+  if (!user.isAdmin) {
+    return <Navigate to="/" />;
+  }
 
   return (
     <>
-      {/* <div className="flex flex-row">
+      <div className="flex">
         <div className="sidebar">
           <Sidebar />
         </div>
@@ -76,15 +76,8 @@ const AdminDashboard = () => {
               {contactCount}</div>
           </div>
         </div>
-      </div> */}
-      <div className="flex flex-row-reverse">
-        <div className="sidebar">
-          <Sidebar/>
-        </div>
-        <div className="content">
-khkefe
-        </div>
       </div>
+
     </>
   );
 };
