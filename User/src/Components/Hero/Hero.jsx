@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className="font-bold text-5xl mb-10 text-purple-700 ">
             Hello! <span>{user.firstName}</span>
           </h1>
-          <p className="text-white  text-2xl p-5 text-justify">
+          <p className="text-white  text-2xl p-2 text-justify">
             User Management System includes a admin and user,the admin is able
             to control all the CRUD operations of the backend that will only be
             shown to admin when he logs in.While the user can also register

@@ -10,7 +10,7 @@ const Signin = () => {
 
   const [isVisible, setisVisible] = useState(false);
   const navigate = useNavigate();
-  const { storeTokenInLS,BASE_URL} = useAuth()
+  const { storeTokenInLS,BASE_URL,user} = useAuth()
   const formRef = useRef();
 
 
@@ -35,6 +35,7 @@ const Signin = () => {
       // Check for admin status
       if (response.status === 200) {
         toast("Signed in successfully");
+        alert(`Welcome to User Management System${user.firstName}`)
 
         // Navigate based on user role
         if (res_data.isAdmin) {
