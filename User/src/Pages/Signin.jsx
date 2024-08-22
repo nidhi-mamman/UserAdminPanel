@@ -40,9 +40,9 @@ const Signin = () => {
         if (res_data.isAdmin) {
           navigate("/admin/dashboard"); // Navigate to admin dashboard
         } else {
+          alert(`Welcome to User Management System ${user.firstName}`)
           navigate("/");
            // Navigate to the home page or user-specific page
-           alert(`Welcome to User Management System ${user.firstName}`)
         }
       } else {
         toast("Invalid credentials");
