@@ -1,4 +1,4 @@
-.hero-section {
+/* .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,4 +38,11 @@
     font-size: 15px;
     text-align: justify !important;
   }
+} */
+
+.hero-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
