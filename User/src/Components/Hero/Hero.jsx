@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="hero-content">
           <h1>
-            Hello! <span>{user.firstName}</span>
+            Hello! <span>{user?.firstName||"Guest"}</span>
           </h1>
           <p >
             User Management System includes a admin and user,the admin is able
