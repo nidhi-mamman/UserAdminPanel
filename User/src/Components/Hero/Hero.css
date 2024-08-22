@@ -1,48 +1,81 @@
-/* .hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .hero-img {
-  width: 50%;
-}
-
-.hero-content {
-  width: 50%;
-  margin: 5rem!important;
-  text-align: justify !important;
-}
-
-.know {
-  width: 9.5rem;
-  height: 3rem;
-  color: white !important;
-  border-radius: 20px;
-  margin: 20px;
-  text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .hero-img {
-    margin-top: 5rem!important;
-  }
-  .hero-content {
-    width: 100%;
-    font-size: 15px;
-    text-align: justify !important;
-  }
-} */
-
-.hero-img{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.know {
+  width: 13rem;
+  height: 3rem;
+  color: white !important;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: blueviolet;
+}
+
+.hero-content p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 20px;
+}
+
+.know-more .icon {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 50%;
+  }
+
+  .hero-content {
+    width: 50%;
+    margin: 5rem !important;
+    text-align: justify !important;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 0rem;
+    margin-left: 1.3rem;
+  }
+  
+  .know {
+    width: 14rem;
+    height: 3rem;
+    color: white !important;
+    border-radius: 20px;
+    margin: 20px;
+    background: blueviolet;
+    text-align: center;
+  }
+
+  .know-more{
+    display: flex;
+    align-items: center;
+  }
+
+  .bulb{
+    background: blueviolet;
+    border-radius: 20px;
+    height: 2rem;
+    width:2rem;
+    left: 43rem;
+    position: absolute;
+  }
 }
