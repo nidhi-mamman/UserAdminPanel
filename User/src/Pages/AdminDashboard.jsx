@@ -57,7 +57,7 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <div className="flex">
+      <div style={{ display: 'flex' ,flexDirection:"row-reverse"}}>
         <div className="sidebar">
           <Sidebar />
         </div>
