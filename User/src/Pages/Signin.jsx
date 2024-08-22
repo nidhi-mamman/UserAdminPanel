@@ -35,13 +35,14 @@ const Signin = () => {
       // Check for admin status
       if (response.status === 200) {
         toast("Signed in successfully");
-        alert(`Welcome to User Management System${user.firstName}`)
 
         // Navigate based on user role
         if (res_data.isAdmin) {
           navigate("/admin/dashboard"); // Navigate to admin dashboard
         } else {
-          navigate("/"); // Navigate to the home page or user-specific page
+          navigate("/");
+           // Navigate to the home page or user-specific page
+           alert(`Welcome to User Management System ${user.firstName}`)
         }
       } else {
         toast("Invalid credentials");
