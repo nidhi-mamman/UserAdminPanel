@@ -10,7 +10,7 @@ const Signin = () => {
 
   const [isVisible, setisVisible] = useState(false);
   const navigate = useNavigate();
-  const { storeTokenInLS,BASE_URL,user} = useAuth()
+  const { storeTokenInLS,BASE_URL} = useAuth()
   const formRef = useRef();
 
 
@@ -40,7 +40,6 @@ const Signin = () => {
         if (res_data.isAdmin) {
           navigate("/admin/dashboard"); // Navigate to admin dashboard
         } else {
-          alert(`Welcome to User Management System ${user.firstName}`)
           navigate("/");
            // Navigate to the home page or user-specific page
         }
