@@ -77,7 +77,7 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div> */}
-      <div className="bg-slate-50">
+      <div className="flex flex-row-reverse">
         <div className="sidebar">
           <Sidebar/>
         </div>
