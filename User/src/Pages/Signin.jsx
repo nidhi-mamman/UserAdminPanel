@@ -34,7 +34,7 @@ const Signin = () => {
 
       // Check for admin status
       if (response.status === 200) {
-        toast("Signed in successfully");
+
         toast(`Welcome to UMS, ${res_data.firstName || 'User'}!`);
 
         // Navigate based on user role
