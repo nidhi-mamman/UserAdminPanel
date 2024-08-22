@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-// import Sidebar from "../Components/Admin/Sidebar/Sidebar";
+import Sidebar from "../Components/Admin/Sidebar/Sidebar";
 import { useAuth } from "../Context/AuthContext";
 import { MdContacts } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
@@ -59,7 +59,7 @@ const AdminDashboard = () => {
     <>
       <div className="">
         <div className="sidebar">
-          {/* <Sidebar /> */}
+          <Sidebar />
         </div>
         <div className="content">
           <div className="admin-board">
