@@ -10,7 +10,7 @@ const Signin = () => {
 
   const [isVisible, setisVisible] = useState(false);
   const navigate = useNavigate();
-  const { storeTokenInLS,BASE_URL} = useAuth()
+  const { storeTokenInLS, BASE_URL } = useAuth()
   const formRef = useRef();
 
 
@@ -25,7 +25,7 @@ const Signin = () => {
     }
 
     console.log(formData)
-    
+
     try {
       const response = await axios.post(`${BASE_URL}/api/signin`, formData);
       const res_data = response.data;
@@ -35,6 +35,8 @@ const Signin = () => {
       // Check for admin status
       if (response.status === 200) {
 
+        toast('Signed in successfully');
+
         toast(`Welcome to UMS, ${res_data.firstName || 'User'}!`);
 
         // Navigate based on user role
@@ -42,7 +44,7 @@ const Signin = () => {
           navigate("/admin/dashboard"); // Navigate to admin dashboard
         } else {
           navigate("/");
-           // Navigate to the home page or user-specific page
+          // Navigate to the home page or user-specific page
         }
       } else {
         toast("Invalid credentials");
