@@ -58,7 +58,7 @@ const AdminDashboard = () => {
   return (
     <>
       <div className="flex">
-        <div className="sidebar">
+        <div className="sidebar float-left">
           <Sidebar />
         </div>
         <div className="content">
