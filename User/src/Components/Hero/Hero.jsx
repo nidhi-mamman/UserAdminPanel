@@ -31,7 +31,7 @@ const Hero = () => {
                 <div className="icon">
                   <HiLightBulb color="white" size={25} className="bulb" />
                   <button className="know">
-                    Know More
+                   More
                   </button>
                 </div>
               </Link>
