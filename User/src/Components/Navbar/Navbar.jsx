@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <div className="top-nav bg-black shadow-md shadow-white">
         <div className="nav-bar ">
-          <ul className={`${sidebarIsOpen ? "sidebar open" : "hide-sidebar"}`}>
+          <ul className={`${sidebarIsOpen?"sidebar":"hide-sidebar"}`}>
             <Link>
               <li><RxCross1 color="white" onClick={()=>{setSidebarIsOpen(!sidebarIsOpen)}}/></li>
             </Link>
