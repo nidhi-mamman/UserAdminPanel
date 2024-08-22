@@ -12,6 +12,7 @@
   border-radius: 20px;
   margin: 20px 20px 20px 0px;
   text-align: center;
+  background: blueviolet;
 }
 
 .hero-content h1 {
@@ -33,7 +34,16 @@
   align-items: center;
 }
 
-@media screen and (min-width: 800px) {
+.bulb{
+  background: blueviolet;
+  border-radius: 20px;
+  height: 2rem;
+  width:2rem;
+  left: 1.8rem;
+  position: absolute;
+}
+
+@media screen and (min-width: 700px) {
   .hero-section {
     display: flex;
     justify-content: space-between;
