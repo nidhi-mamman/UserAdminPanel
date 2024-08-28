@@ -10,7 +10,7 @@ const Signin = () => {
 
   const [isVisible, setisVisible] = useState(false);
   const navigate = useNavigate();
-  const { storeTokenInLS, BASE_URL } = useAuth()
+  const { storeTokenInLS, BASE_URL,user } = useAuth()
   const formRef = useRef();
 
 
@@ -29,9 +29,7 @@ const Signin = () => {
     try {
       const response = await axios.post(`${BASE_URL}/api/signin`, formData);
       const res_data = response.data;
-
-      console.log("token is :",res_data)
-
+      
       storeTokenInLS(res_data.token);
 
       // Check for admin status
@@ -39,7 +37,7 @@ const Signin = () => {
     
 
         toast('Signed in successfully');
-        toast(`Welcome to UMS, ${res_data.firstName || 'User'}!`);
+        toast(`Welcome to UMS, ${user.firstName || 'User'}!`);
 
         // Navigate based on user role
        setTimeout(() => {
