@@ -37,7 +37,7 @@ const Signin = () => {
     
 
         toast('Signed in successfully');
-        toast(`Welcome to UMS, ${res_data.email|| 'User'}!`);
+        toast(`Welcome to UMS, ${response.email|| 'User'}!`);
 
         // Navigate based on user role
        setTimeout(() => {
