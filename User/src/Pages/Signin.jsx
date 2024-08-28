@@ -40,12 +40,13 @@ const Signin = () => {
         toast('Signed in successfully');
 
         // Navigate based on user role
-        if (res_data.isAdmin) {
-          navigate("/admin/dashboard"); // Navigate to admin dashboard
-        } else {
-          navigate("/");
-          // Navigate to the home page or user-specific page
-        }
+       setTimeout(() => {
+                if (res_data.isAdmin) {
+                    navigate("/admin/dashboard");
+                } else {
+                    navigate("/");
+                }
+            }, 1000); 
       } else {
         toast("Invalid credentials");
       }
