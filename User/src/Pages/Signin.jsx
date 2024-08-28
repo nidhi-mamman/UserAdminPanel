@@ -29,7 +29,7 @@ const Signin = () => {
     try {
       const response = await axios.post(`${BASE_URL}/api/signin`, formData);
       const res_data = response.data;
-      
+      console.log(res_data)
       storeTokenInLS(res_data.token);
 
       // Check for admin status
