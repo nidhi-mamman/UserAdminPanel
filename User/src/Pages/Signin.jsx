@@ -30,7 +30,7 @@ const Signin = () => {
       const response = await axios.post(`${BASE_URL}/api/signin`, formData);
       const res_data = response.data;
 
-      console.log(res_data)
+      console.log("token is :",res_data)
 
       storeTokenInLS(res_data.token);
 
