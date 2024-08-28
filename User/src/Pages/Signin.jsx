@@ -46,7 +46,7 @@ const Signin = () => {
                 } else {
                     navigate("/");
                 }
-            }, 1000); 
+            }, 3000); 
       } else {
         toast("Invalid credentials");
       }
